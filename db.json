@@ -1,0 +1,62 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Title",
+            "description": "Description",
+            "images": ["image1.jpg", "image2.jpg"],
+            "tags": ["1", "2"],
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 2,
+            "name": "Title",
+            "description": "Description",
+            "images": ["image1.jpg", "image2.jpg"],
+            "tags": ["1", "2"],
+            "link": "https://www.google.com"
+        }
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "Tag 1"
+        },
+        {
+            "id": 2,
+            "name": "Tag 2"
+        }
+    ],
+    "educations": [
+        {
+            "id": 2,
+            "institution": "Instituição",
+            "couse": "Curso",
+            "initiatedAt": "2020-01-01",
+            "finishedAt": "2020-01-01"
+        },
+        {
+            "id": 2,
+            "institution": "Instituição",
+            "couse": "Curso",
+            "initiatedAt": "2020-01-01",
+            "finishedAt": "2020-01-01"
+        }
+    ],
+    "experiences": [
+        {
+            "id": 1,
+            "company": "Empresa",
+            "role": "Cargo",
+            "initiatedAt": "2020-01-01",
+            "finishedAt": "2020-01-01"
+        },
+        {
+            "id": 2,
+            "company": "Empresa",
+            "role": "Cargo",
+            "initiatedAt": "2020-01-01",
+            "finishedAt": "2020-01-01"
+        }
+    ]
+}
