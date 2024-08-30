@@ -1,24 +1,54 @@
 import { ReactElement } from "react";
-import { ButtonProps } from "./interface";
+import { tv } from 'tailwind-variants';
+import ButtonProps from "./interface";
 
-export const Button: React.FC<ButtonProps> = ({ ...props }) => {
+const Button: React.FC<ButtonProps> = ({ ...props }) => {
+    const button = tv({
+            base: 'px-1 py-1 rounded-md',
+            variants: {
+                variant: {
+                    primary : 'bg-primary text-white', 
+                    outline : 'bg-transparent border border-primary text-primary',
+                },
+                size: {
+                    sm: 'w-full text-sm',
+                    md: 'w-[50%] text-base',
+                    lg: 'w-20 text-lg'
+                }
+            },
+        },
+        {
+            responsiveVariants: ['mobile', 'laptop', 'desktop']
+        }
+    );
+
     const presentChild = () :ReactElement => {
         let icon: ReactElement = props.icon != null ? props.icon : <></>;
         let text: string = props.text != null ? props.text : "";
 
         return (
-            <span className="flex items-center justify-center">
-                {props.variant === 'iconLeft' && icon}
+            <span className="flex gap-2 items-center justify-center">
+                {props.iconPosition === 'left' && text && icon}
                 {!text && icon}
                 {text}
-                {props.variant === 'iconRight' && icon}
+                {props.iconPosition === 'right' && text && icon}
             </span>
         );
     }
 
     return (
-        <button>
+        <button className={button({ 
+            variant: props.variant,
+            size: { 
+              initial: 'sm', 
+              mobile: 'sm', 
+              laptop: 'md', 
+              desktop: 'lg', 
+            }, 
+          })}>
             {presentChild()}
         </button>
     );
 }
+
+export default Button;
