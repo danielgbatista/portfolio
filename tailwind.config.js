@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 
+const { withTV } = require ( 'tailwind-variants/transformer' );
 const colors = require("./src/style/colors.json");
 const plugin = require("tailwindcss/plugin");
 
-export default {
+export default withTV({
   content: ["./index.html", "./src/**/*.tsx"],
   plugins: [
     plugin(({ addVariant }) => {
@@ -40,7 +41,7 @@ export default {
     screens: {
       desktop: "1281px",
       laptop: "1024px",
-      tablet: "768px",
+      mobile: "768px",
     },
   },
-};
+});
