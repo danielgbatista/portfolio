@@ -3,7 +3,7 @@ import IconButtonProps from "./interface";
 
 const IconButton: React.FC<IconButtonProps> = ({ ...props }) => {
     const iconButton = tv({
-            base: 'w-auto px-2 py-2 rounded-lg',
+            base: 'flex items-center justify-center px-2 py-2 rounded-lg',
             variants: {
                 variant: {
                     primary : 'bg-primary text-white', 

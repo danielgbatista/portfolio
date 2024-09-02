@@ -2,9 +2,9 @@ import React from "react";
 import TagProps from "./interface";
 import { tv } from "tailwind-variants";
 
-const Tag: React.FC<TagProps> = ({...props }) => {
+const Tag: React.FC<TagProps> = ({ bgColor, text }) => {
     const tag = tv({
-        base: 'rounded-lg text-white no-underline',
+        base: 'flex justify-center items-center text-white no-underline rounded-lg',
         variants: {
             size: {
                 sm: 'px-4 py-4 text-sm',
@@ -20,7 +20,7 @@ const Tag: React.FC<TagProps> = ({...props }) => {
 
     return (
         <span className={tag({ 
-            class: props.customizedColor,
+            class: `bg-[${bgColor}]`,
             size: { 
               initial: 'sm', 
               mobile: 'sm', 
@@ -28,7 +28,7 @@ const Tag: React.FC<TagProps> = ({...props }) => {
               desktop: 'lg', 
             }, 
           })}>
-            {props.text}
+            {text}
         </span>
     );
 }
