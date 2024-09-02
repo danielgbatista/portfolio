@@ -3,17 +3,25 @@ import { tv } from 'tailwind-variants';
 import ButtonProps from "./interface";
 
 const Button: React.FC<ButtonProps> = ({ ...props }) => {
+    const setAction = () => {
+        if(props.action){
+            props.action();
+        } else if(props.href){
+            window.open(props.href, '_self');
+        }
+    }
+
     const button = tv({
-            base: 'px-1 py-1 rounded-md',
+            base: 'w-auto px-8 py-4 rounded-lg',
             variants: {
                 variant: {
                     primary : 'bg-primary text-white', 
                     outline : 'bg-transparent border border-primary text-primary',
                 },
                 size: {
-                    sm: 'w-full text-sm',
-                    md: 'w-[50%] text-base',
-                    lg: 'w-20 text-lg'
+                    sm: 'w-full h-auto text-sm',
+                    md: 'text-base',
+                    lg: 'text-lg'
                 }
             },
         },
@@ -24,28 +32,29 @@ const Button: React.FC<ButtonProps> = ({ ...props }) => {
 
     const presentChild = () :ReactElement => {
         let icon: ReactElement = props.icon != null ? props.icon : <></>;
-        let text: string = props.text != null ? props.text : "";
+        let text: string = props.text;
 
         return (
             <span className="flex gap-2 items-center justify-center">
-                {props.iconPosition === 'left' && text && icon}
-                {!text && icon}
+                {props.iconPosition === 'left' && icon}
                 {text}
-                {props.iconPosition === 'right' && text && icon}
+                {props.iconPosition === 'right' && icon}
             </span>
         );
     }
 
     return (
-        <button className={button({ 
-            variant: props.variant,
-            size: { 
-              initial: 'sm', 
-              mobile: 'sm', 
-              laptop: 'md', 
-              desktop: 'lg', 
-            }, 
-          })}>
+        <button 
+            onClick={setAction}
+            className={button({ 
+                variant: props.variant,
+                size: { 
+                    initial: 'sm', 
+                    mobile:  'sm', 
+                    laptop:  'md', 
+                    desktop: 'lg', 
+                }, 
+        })}>
             {presentChild()}
         </button>
     );

@@ -1,12 +1,13 @@
 import { ReactElement } from "react";
 
 interface ButtonProps {
-    text?: string,
-    // size: 'sm' | 'md' | 'lg',
-    variant: 'primary' | 'outline' ,
-    backgroundColor?: string,
-    iconPosition?: 'left' | 'right',
+    variant: 'primary' | 'outline',
+    text: string,
+    href?: string,
     icon?: ReactElement
+    action?: () => void,
+    customizedColor?: string,
+    iconPosition?: 'left' | 'right',
 }
 
 export default ButtonProps;
