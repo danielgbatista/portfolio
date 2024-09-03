@@ -6,6 +6,8 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   resolve: {
     alias: {
+      '@mocks': path.resolve(__dirname, 'src/assets/mocks/*'),
+      '@services': path.resolve(__dirname, 'src/services/*'),
       '@atoms': path.resolve(__dirname, 'src/atomic-component/atom'),
       '@molecules': path.resolve(__dirname, 'src/atomic-component/molecule'),
       '@organisms': path.resolve(__dirname, 'src/atomic-component/organism'),
