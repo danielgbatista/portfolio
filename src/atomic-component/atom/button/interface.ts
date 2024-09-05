@@ -7,6 +7,7 @@ interface ButtonProps {
     action?: () => void,
     endIcon?: ReactElement,
     startIcon?: ReactElement,
+    className?: string,
 }
 
 export default ButtonProps;

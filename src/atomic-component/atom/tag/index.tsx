@@ -2,14 +2,14 @@ import React from "react";
 import TagProps from "./interface";
 import { tv } from "tailwind-variants";
 
-const Tag: React.FC<TagProps> = ({ bgColor, text }) => {
+const Tag: React.FC<TagProps> = ({ bgColor, text, classname }) => {
     const tag = tv({
-        base: 'flex justify-center items-center text-white no-underline rounded-lg',
+        base: 'w-auto text-center text-white no-underline list-none rounded-md font-serif font-semibold',
         variants: {
             size: {
-                sm: 'px-4 py-4 text-sm',
-                md: 'px-8 py-6 text-base',
-                lg: 'px-6 py-4 text-lg'
+                sm: 'px-4 py-2 text-sm',
+                md: 'px-4 py-2 text-base',
+                lg: 'px-4 py-2 text-lg'
             }
         },
     },
@@ -19,17 +19,12 @@ const Tag: React.FC<TagProps> = ({ bgColor, text }) => {
 );
 
     return (
-        <span className={tag({ 
-            class: `bg-[${bgColor}]`,
-            size: { 
-              initial: 'sm', 
-              mobile: 'sm', 
-              laptop: 'md', 
-              desktop: 'lg', 
-            }, 
+        <li style={{backgroundColor: `${bgColor}`}} className={tag({ 
+            class: `${classname}`,
+            size: 'sm', 
           })}>
             {text}
-        </span>
+        </li>
     );
 }
 

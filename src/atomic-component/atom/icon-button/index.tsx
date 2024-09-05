@@ -22,7 +22,8 @@ const IconButton: React.FC<IconButtonProps> = ({ ...props }) => {
     );
 
     return (
-        <button className={iconButton({ 
+        <button onClick={props.action} className={iconButton({ 
+            className: `${props.customizedColor}`,
             variant: props.variant,
             size: { 
               initial: 'sm', 

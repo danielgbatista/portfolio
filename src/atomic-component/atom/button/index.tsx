@@ -13,11 +13,11 @@ const Button: React.FC<ButtonProps> = ({ ...props }) => {
     }
 
     const button = tv({
-            base: 'flex items-center px-8 py-4 gap-2 rounded-lg',
+            base: 'flex items-center justify-center px-4 py-2 gap-2 rounded-md font-semibold',
             variants: {
                 variant: {
                     primary : 'bg-primary text-white', 
-                    outline : 'bg-transparent border border-primary text-primary',
+                    outline : 'bg-transparent border-2 border-primary text-primary',
                 },
                 size: {
                     sm: 'text-sm',
@@ -35,12 +35,13 @@ const Button: React.FC<ButtonProps> = ({ ...props }) => {
         <button 
             onClick={handleClick}
             className={button({ 
+                className: `${props.className}`,
                 variant: props.variant,
                 size: { 
                     initial: 'sm', 
                     mobile:  'sm', 
                     laptop:  'md', 
-                    desktop: 'lg', 
+                    desktop: 'md', 
                 }, 
             })}
         >
