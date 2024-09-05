@@ -7,6 +7,8 @@
     "skipLibCheck": true,
     "baseUrl": "./",
     "paths": {
+      "@hooks/*": ["src/hooks/*"],
+      "@utils/*": ["src/assets/utils/*"],
       "@mocks/*": ["src/assets/mocks/*"],
       "@services/*": ["src/services/*"],
       "@atoms/*": ["src/atomic-component/atom/*"],

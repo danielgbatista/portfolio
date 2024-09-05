@@ -33,6 +33,10 @@ export default withTV({
   ],
   theme: {
     colors,
+    fontFamily: {
+      sans: ["Jost", "sans-serif"],
+      serif: ["Montserrat", "serif"],
+    },
     extend: {
       boxShadow: {
         base: "0px 0px 7px 2px rgba(0,0,0,0.2)",
