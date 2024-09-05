@@ -1,0 +1,43 @@
+[
+    {
+      "name": "React",
+      "color": "#61DBFB"
+    },
+    {
+      "name": "JavaScript",
+      "color": "#F7DF1E"
+    },
+    {
+      "name": "TypeScript",
+      "color": "#3178C6"
+    },
+    {
+      "name": "Tailwind CSS",
+      "color": "#38B2AC"
+    },
+    {
+      "name": "Node",
+      "color": "#68A063"
+    },
+    {
+      "name": "PostgreSQL",
+      "color": "#336791"
+    },
+    {
+      "name": "MySQL",
+      "color": "#00758F"
+    },
+    {
+      "name": "Python",
+      "color": "#306998"
+    },
+    {
+      "name": "Docker",
+      "color": "#0db7ed"
+    },
+    {
+      "name": "Figma",
+      "color": "#F24E1E"
+    }
+  ]
+  
