@@ -7,7 +7,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ ...props }) => {
     let visible = props.isOpen ? 'flex' : 'hidden';
 
     return (
-        <div className={`${visible} fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 max-mobile:overflow-auto`}>
+        <div className={`${visible} fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 overflow-hidden desktop:overflow-y-hidden`}>
                 <div className="max-mobile:w-full max-w-4xl bg-white max-mobile:flex-col flex gap-4 p-6 rounded-lg shadow-lg max-mobile:max-h-[90vh] max-mobile:overflow-y-auto">
                 <div className="max-mobile:w-full w-1/2 border border-gray-300 rounded-lg">
                     <img className="w-full max-mobile:h-auto h-full object-cover rounded-lg" src={props.data.image} alt={props.data.title} />
