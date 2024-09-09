@@ -31,5 +31,27 @@
         "website": "https://chatapp.example.com",
         "createdAt": "2021-11-01T14:00:00Z",
         "updatedAt": "2021-12-01T16:00:00Z"
+    },
+    {
+        "id": 3,
+        "title": "Chat Application",
+        "description": "Bem-vindo ao EcoPonto, o seu destino online para inspiração e ação em prol de um estilo de vida mais sustentável e ambientalmente consciente. No EcoPonto, estamos comprometidos em fornecer recursos valiosos, informações e ideias práticas para ajudá-lo a fazer escolhas mais ecológicas em sua vida diária. Explore nosso conteúdo abrangente e descubra dicas úteis sobre redução de resíduos, reciclagem eficaz, conservação de energia, transporte sustentável e muito mais. Fique por dentro das últimas notícias e tendências ambientais, além de histórias inspiradoras de pessoas e comunidades que estão fazendo a diferença.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzD2Zw8bKsezPy8fOui-DF4XLUqpMov6W9Qhg64TcGO9yw0rXer9MiBot29g&s",
+        "technologies": ["Python", "Django", "Channels", "WebSocket"],
+        "github": "https://github.com/username/chatapp",
+        "website": "https://chatapp.example.com",
+        "createdAt": "2021-11-01T14:00:00Z",
+        "updatedAt": "2021-12-01T16:00:00Z"
+    },
+    {
+        "id": 3,
+        "title": "Chat Application",
+        "description": "Bem-vindo ao EcoPonto, o seu destino online para inspiração e ação em prol de um estilo de vida mais sustentável e ambientalmente consciente. No EcoPonto, estamos comprometidos em fornecer recursos valiosos, informações e ideias práticas para ajudá-lo a fazer escolhas mais ecológicas em sua vida diária. Explore nosso conteúdo abrangente e descubra dicas úteis sobre redução de resíduos, reciclagem eficaz, conservação de energia, transporte sustentável e muito mais. Fique por dentro das últimas notícias e tendências ambientais, além de histórias inspiradoras de pessoas e comunidades que estão fazendo a diferença.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzD2Zw8bKsezPy8fOui-DF4XLUqpMov6W9Qhg64TcGO9yw0rXer9MiBot29g&s",
+        "technologies": ["Python", "Django", "Channels", "WebSocket"],
+        "github": "https://github.com/username/chatapp",
+        "website": "https://chatapp.example.com",
+        "createdAt": "2021-11-01T14:00:00Z",
+        "updatedAt": "2021-12-01T16:00:00Z"
     }
 ]
