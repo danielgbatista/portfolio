@@ -13,6 +13,7 @@ export default defineConfig({
       '@atoms': path.resolve(__dirname, 'src/atomic-component/atom'),
       '@molecules': path.resolve(__dirname, 'src/atomic-component/molecule'),
       '@organisms': path.resolve(__dirname, 'src/atomic-component/organism'),
+      '@templates': path.resolve(__dirname, 'src/atomic-component/template'),
       '@pages': path.resolve(__dirname, 'src/atomic-component/page'),
     }
   },

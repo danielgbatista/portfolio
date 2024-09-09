@@ -14,6 +14,7 @@
       "@atoms/*": ["src/atomic-component/atom/*"],
       "@molecules/*": ["src/atomic-component/molecule/*"],
       "@organisms/*": ["src/atomic-component/organism/*"],
+      "@templates/*": ["src/atomic-component/template/*"],
       "@pages/*": ["src/atomic-component/page/*"]
     },
 

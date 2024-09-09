@@ -19,3 +19,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem); /* Ajuste a distância conforme necessário */
+  }
+}
+
+.animate-bounce-custom {
+  animation: bounce 2s infinite;
+}
